@@ -1,0 +1,29 @@
+<%- include layouts/headers.ejs %>
+    <div class="container-fluid"><br/>
+      <h2 class="text-white mb-2"><%= title %></h2>
+    
+      <div class="row class" style="width: 80rem col-sm-13 ">
+
+        <% for(var ejemplar=0;ejemplar<Ejemplares.length;ejemplar++) { %>
+        <div class="col-sm-3 mr-sm-0 mb-2">
+          <div class="card bg-white text-primary">
+            <img height="317" src="<%=Ejemplares[ejemplar].imagen %>" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"><%=Ejemplares[ejemplar].titulo %></h5>
+              <p class="card-text"><%=Ejemplares[ejemplar].descripcion %><br/>
+               <h4> $ <%=Ejemplares[ejemplar].precio %></h4>
+              </p>
+              <a href="#" class="btn btn-success">Comprar</a>
+              <a href="https://api.whatsapp.com/send?phone=+573112261114&text=Hello"> <img height="60" src="https://1000marcas.net/wp-content/uploads/2019/11/WhatsApp-logo.jpg" class="col-sm-4 mr-sm-0 mb-2"></a>
+            </div>
+          </div>
+        </div>
+
+        <% } %>
+
+       
+       
+      </div>
+    </div>
+
+    <%- include layouts/footer.ejs %>

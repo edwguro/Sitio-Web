@@ -1,0 +1,37 @@
+
+
+a {
+  color: #aed4e3;
+}
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box div {
+  width: 100px;
+  height: 100px;
+}
+.container-fluid {
+  max-height: 100px;
+}
+#background-head {
+  background: #b3e980;
+}
+.form-center{
+display: flex;
+align-items: center;
+justify-content: center;
+min-height: 100vh;
+};
+.abs-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.form {
+  width: 850px;
+}

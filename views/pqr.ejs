@@ -1,0 +1,41 @@
+<%- include layouts/headers.ejs %>
+
+  <div  class="abs-center p-3">
+    <form action="#" class="border p-0 form abs-center text-center bg-dark">
+      <div class=" col-sm-12 px-5 my-4 ">
+        <h2 class="text-warning mb-4 my-1 p-text-center2 "><%= title %></h2>
+        <div class="col mb-2">
+          <p class="text-white">Ingrese aqui sus datos </p>
+          <input type="text" class="form-control" placeholder="Nombres">
+        </div>
+        <div class="col mb-2">
+          <input type="text" class="form-control" placeholder="Apellidos">
+        </div>
+        <div class="col mb-1 mb-2 ">
+          <select id="inputState" class="form-control col-mb-1">
+            <option selected>Tipo de identidad</option>
+            <option>CEDULA</option>
+            <option>Tarjeta de identidad</option>
+            <option>Pasaporte</option>
+            <option>Cedula de ciudadania</option>
+          </select>
+        </div>
+        <div class="col mb-2">
+          <input type="text" class="form-control" placeholder="No de identificacion">
+        </div>
+        <div class="col mb-2">
+          <input type="text" class="form-control" placeholder="email">
+        </div>
+        <div class="col mb-2">
+          <input type="text" class="form-control" placeholder="Escriba aqui su PQR">
+        </div>
+        <div class="custom-file col-mb-2">
+          <label class="custom-file-label my-12 mb-2" for="customFileLang" lang="es">Seleccionar Archivo</label>
+        </div>
+        <p>----------</p>
+        <button class="btn btn-primary" type="submit">Enviar formulario</button>
+      </div>
+    </form>
+  </div>
+ 
+    <%- include layouts/footer.ejs %>
